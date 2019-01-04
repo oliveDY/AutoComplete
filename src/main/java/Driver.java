@@ -58,16 +58,16 @@ public class Driver {
 		// set database config:
 		DBConfiguration.configureDB(conf2, 
 				"com.mysql.jdbc.Driver",
-				"jdbc:mysql://ip_address:port/test",
+				"jdbc:mysql://10.30.167.160:8889/olivetest",
 				"root",
-				"password");
+				"root");
 		
 		Job job2 = Job.getInstance(conf2);
 		job2.setJobName("Model");
 		job2.setJarByClass(Driver.class);
 
 		// TODO add dependency:
-		job2.addArchiveToClassPath(new Path("path_to_ur_connector"));
+		job2.addArchiveToClassPath(new Path("/mysql/mysql-connector-java-5.1.39-bin.jar"));
 
 		job2.setMapOutputKeyClass(Text.class);
 		job2.setMapOutputValueClass(Text.class);
