@@ -5,4 +5,4 @@
 #####* Query database with users’ input words from front-end to achieve real-time auto-completion
 
 ##### Demo as below:
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![alt text](https://github.com/oliveDY/AutoComplete/blob/master/demopic.png?raw=true)
